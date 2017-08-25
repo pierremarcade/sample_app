@@ -1,0 +1,15 @@
+<tr>
+  <td class="micropost">
+    <span class="content"><%= micropost.content %></span>
+    <span class="timestamp">
+      <%=  t(:posted_since) %> <%= time_ago_in_words(micropost.created_at) %>.
+    </span>
+  </td>
+  <% if current_user?(micropost.user) %>
+    <td>
+      <%= link_to t(:delete), micropost_path(micropost, params_link), :method => :delete,
+                                       data: { :confirm => t(:delete_confirm)},
+                                       :title => micropost.content %>
+    </td>
+  <% end %>
+</tr>

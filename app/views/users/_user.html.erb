@@ -1,0 +1,8 @@
+<li>
+  <%= gravatar_for user, :size => 30 %>
+  <%= link_to user.name, user_path(user, params_link) %>
+  <% if current_user.admin? %>
+  | <%= link_to t(:delete), user_path(user, params_link), :method => :delete, :confirm => t(:confirm_delete),
+                                :title => t(:delete)+" #{user.nom}" %>
+  <% end %>
+</li>

@@ -1,0 +1,9 @@
+<%= form_for @micropost, url: microposts_path(@micropost, params_link) do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit t(:validate) %>
+  </div>
+<% end %>

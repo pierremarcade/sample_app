@@ -1,0 +1,69 @@
+en:
+  email: "Email"
+  name: "Name"
+  user: "User"
+  password: "Password"
+  password_confirmation: ""
+  sign_in: "Sign In"
+  sign_out: "Sign out"
+  registration: "Registration"
+  not_registered: "Not registered"
+  home: "Home"
+  about: "About"
+  help: "Help"
+  sign_up: "Sign up"
+  contact: "Contact us"
+  news: "News"
+  rails_tutorial: "Rails tutorial"
+  edit: "Edit"
+  edit_profile: "Edit Profile"
+  profile_information: "Profile Information"
+  profile: "Profile"
+  change_gravatar: "Change gravatar"
+  authentification_required: "UAuthentification is required"
+  all_users: "All users"
+  users: "Users"
+  validate: "Validate"
+  what_s_up: "What's up"
+  authentified_users: "auhthentified users"
+  delete: "delete"
+  delete_confirm: "Are you sur to delete this message"
+  info_about_following_followers: "Information about follocers and followings"
+  following: 
+    one: "following"
+    other: "followings"
+  following_title: "followings"
+  follower: 
+    one: "follower"
+    other: "followers"
+  follower_title: "followers"
+  unfollow: "unfollow"
+  follow: "follow"
+  message: 
+      one: "message"
+      other: "messages"
+  microposts_created: "Your message is posted"
+  posted_since: "Posted since"
+  errors:
+    format: "%{message}"
+    attributes:
+      email:
+        blank: "email is empty"
+  views:
+      pages:
+         home:
+           example_application: "Exemple application"
+           home_description: "Home description"
+         help:
+           page_help_description: "Page help desc"
+           book_help_description: "Book help description"
+           page_help_link: "page help link"
+           book_help_link: "book help link"
+  controllers:
+      users:
+        create:
+           welcome_on_app: "welcome on app"
+  will_paginate:
+    page_gap: "&hellip;"
+    previous_label: "Previous"
+    next_label: "Next"

@@ -1,0 +1,26 @@
+<header>
+  <% logo = image_tag("logo.png", :alt => t(:example_app), :class => "round") %>
+  <%= link_to logo, root_path(params_link) %>
+    <section id="translation">
+        <% fr = image_tag("fr.png")
+           en =  image_tag("gb.png") %>
+     <%= link_to fr, current_path(:locale => nil) %>
+     <%= link_to en, current_path(:locale => :en) %>
+    </section>
+   
+    
+  <nav class="round">
+    <ul>
+      <li><%= link_to t(:home), root_path(params_link) %></li>
+      <li><%= link_to t(:help), help_path(params_link) %></li>
+      <% if signed_in? %>
+        <li><%= link_to t(:users), users_path(params_link) %></li>
+        <li><%= link_to t(:profile), edit_user_path(current_user,params_link) %></li>
+        <li><%= link_to t(:sign_out), signout_path(params_link) %></li>
+      <% else %>
+        <li><%= link_to t(:sign_up), signup_path(params_link) %></li>
+        <li><%= link_to t(:sign_in), signin_path(params_link) %></li>
+      <% end %>
+    </ul>
+  </nav>
+</header>

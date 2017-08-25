@@ -1,0 +1,24 @@
+<% if signed_in? %>
+  <table class="front" summary="<%= t(:authentified_users) %>">
+    <tr>
+      <td class="main">
+        <h1 class="micropost"><%= t(:what_s_up) %> ?</h1>
+        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/feed' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+        <%= render 'shared/stats' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <h1><%= t('views.pages.home.application_example') %></h1>
+
+  <p>
+     <%= t('views.pages.home.home_description') %> 
+    <a href="http://railstutorial.org/">Tutoriel Ruby on Rails</a>.
+  </p>
+
+  <%= link_to t(:sign_up)+" !", signup_path(params_link), :class => "signup_button round" %>
+<% end %>

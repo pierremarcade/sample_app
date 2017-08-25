@@ -1,0 +1,7 @@
+<h1><%= t(:edit_profile) %> </h1>
+<% provide(:button_text, t(:edit)) %>
+<%= render 'form' %>
+<div>
+  <%= gravatar_for @user %>
+  <a href="http://gravatar.com/emails"><%=t(:change_gravatar)%></a>
+</div>

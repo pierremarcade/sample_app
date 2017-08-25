@@ -1,0 +1,123 @@
+fr:
+  email: "Email"
+  name: "Nom"
+  user: "Utilisateur"
+  password: "Mot de passe"
+  password_confirmation: "Confirmation"
+  sign_in: "S'identifier"
+  sign_out: "Se déconnecter"
+  registration: "Inscription"
+  not_registered: "Pas inscrit"
+  home: "Accueil"
+  about: "À propos"
+  help: "Aide"
+  sign_up: "S'inscrire"
+  contact: "Nous contacter"
+  news: "Informations"
+  rails_tutorial: "Tutoriel Rails"
+  edit: "Editer"
+  edit_profile: "Editer Profil"
+  profile_information: "Information profil"
+  profile: "Profil"
+  change_gravatar: "Changer de gravatar"
+  authentification_required: "Une authentification est requise"
+  all_users: "Tous les utilisateurs"
+  users: "Utilisateurs"
+  validate: "Valider"
+  what_s_up: "Quoi de neuf"
+  authentified_users: "utilisateurs authentifiés"
+  delete: "supprimer"
+  delete_confirm: "Etes vous sûr de vouloir supprimer ce message"
+  info_about_following_followers: "Information à propos des auteurs suivis ou des lecteurs"
+  following: 
+    one: "abonné"
+    other: "abonnés"
+  following_title: "abonnés"
+  follower: 
+    one: "abonnement"
+    other: "abonnements"
+  follower_title: "abonnements"
+  unfollow: "se désabonner"
+  follow: "s'abonner"
+  message: 
+      one: "message"
+      other: "messages"
+  microposts_created: "Votre message a été posté"
+  posted_since: "Posté il y a"
+  error: 
+    one: "erreur"
+    other: "erreurs"
+  activerecord:
+    models:
+      user: Dude
+    attributes:
+      user:
+        name: "Nom"
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      present: doit être vide
+      confirmation: ne concorde pas avec %{attribute}
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      model_invalid: "Validation échouée: %{errors}"
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      required: doit exister
+      taken: n'est pas disponible
+      too_long:
+        one: est trop long (pas plus d'un caractère)
+        other: est trop long (pas plus de %{count} caractères)
+      too_short:
+        one: est trop court (au moins un caractère)
+        other: est trop court (au moins %{count} caractères)
+      wrong_length:
+        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+      other_than: doit être différent de %{count}
+    template:
+      body: 'Veuillez vérifier les champs suivants : '
+      header:
+        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+  views:
+      pages:
+         home:
+            example_application: "Application exemple"
+            home_description: "C'est la page d'accueil pour l'application exemple du"
+         help:
+            page_help_description: "Obtenez de l'aide sur le Tutoriel Ruby on Rails Tutorial sur la"
+            book_help_description: "Pour obtenir de l'aide sur cette application exemple, consultez le"
+            page_help_link: "page d'aide du Tutoriel Rails"
+            book_help_link: "livre du Tutoriel Rails"
+      shared:
+         error_messages:
+            title: 
+                one: "a été détectée"
+                other: "ont été détectées"
+            problem_fields_title: 
+                one: "Il y a un problème sur le champ suivant : "
+                other: "Il y a des problèmes sur les champs suivants : "
+  controllers:
+     users:
+       create:
+          welcome_on_app: "Bienvenue dans l'Application Exemple!"
+     sessions:
+       create:
+          connection_error: "Combinaison Email/Mot de passe invalide."
+  will_paginate:
+    page_gap: "&hellip;"
+    previous_label: "Précédent"
+    next_label: "Suivant"
+  

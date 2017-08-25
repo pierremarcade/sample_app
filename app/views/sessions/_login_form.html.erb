@@ -1,0 +1,13 @@
+<%= form_for(:session, :url => sessions_path(params_link)) do |f| %>
+  <div class="field">
+    <%= f.label :email, t(:email) %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password, t(:password)  %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit t(:sign_in) %>
+  </div>
+<% end %>
